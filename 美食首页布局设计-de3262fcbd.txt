@@ -1,0 +1,26 @@
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.carousel-item {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.rotate-3d:hover {
+    transform: rotateY(15deg);
+}
+
+/* 修复 Tailwind 和自定义动画的结合 */
+.animate-fadeIn {
+    animation: fadeIn 0.5s;
+}
